@@ -4,14 +4,14 @@ def whatQuad(x, y):
         if y > 0:
             location = 'quad 1'
         elif y < 0:
-            location = 'quad 2'
+            location = 'quad 4'
         elif y == 0:
             location = 'on y axis'
     elif x < 0:
         if y < 0:
             location = 'quad 3'
         elif y > 0:
-            location = 'quad 4'
+            location = 'quad 2'
         elif y == 0:
             location = 'on y axis'
     elif x == 0:
@@ -34,6 +34,10 @@ for currentTestData in testData:
         print(f"x: {x}")
         print(f"y: {y}")
         print(f"{quadVal} != {expected}")
+
+    else:
+        print(f"x = {x}; y = {y}; quad: {quadVal}")
+
 
 
 
