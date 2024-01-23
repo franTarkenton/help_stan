@@ -1,3 +1,8 @@
 lab2_questions.md
 dt.py
 *.pyc
+exoplanet_2024A_data.txt
+venv/**
+json_data.json
+mangled.json
+junk.png

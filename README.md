@@ -1,5 +1,7 @@
-# help_stan
+# Introduction
 
-demonstrate how to contribute to git
+Git basics
+
+
 
 ## a second level headerr
