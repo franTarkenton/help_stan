@@ -59,6 +59,12 @@ def demo_two_dicts(dict1, dict2):
         for col_name in dict1[probe]:
             cnt = 0
             for data in dict1[probe][col_name]:
+                # you could also say that for loop with
+                # for list_position in range(len(dict1[probe][col_name])):
+                # and then use the list_position to refer to the same element
+                # in the other dictionary
+                #  element_first_dict = dict1[probe][col_name][list_position]
+                #  elemenat_second_dict = dict2[probe][col_name][list_position]
                 value_dict1 = data
                 # corresponding value in dictionary 2 for the same column name
                 # and array position
