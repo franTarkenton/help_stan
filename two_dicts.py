@@ -72,7 +72,7 @@ def save(struct, output_file):
         json.dump(struct, fh, indent=4)
             
 def mangle(struct):
-    """mangles the data structure
+    """mangles the data structure, by replaceing the values with random values
     """
     for probe in struct:
         for col_name in struct[probe]:
@@ -86,13 +86,14 @@ def mangle(struct):
 if __name__ == '__main__':
     exo_file = 'exoplanet_2024A_data.txt'
     tmp_json = 'json_data.json'
+    mangled_data = 'mangled.json'
 
     data_struct = read_file(filename=exo_file)
     save(data_struct, tmp_json)
 
     new_dict = copy.deepcopy(data_struct)
     mangled_dict = mangle(new_dict)
-    save(mangled_dict, 'mangled.json')
+    save(mangled_dict, mangled_data)
 
     demo_two_dicts(data_struct, new_dict)
 
